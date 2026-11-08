@@ -27,4 +27,3 @@ if len(nombres) > 0:
 
 else:
     print("No se ha registrado ningun alumno")
-
