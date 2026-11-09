@@ -7,21 +7,10 @@ while len(notas) < 5:
     else:
         print("Nota no valida, tiene que ser entre 0 y 10")
 
-suma = 0
-mayor = notas[0]
-menor = notas[0]
-
-for nota in notas:
-    suma = suma + nota
-    if nota > mayor:
-        mayor = nota
-    if nota < menor:
-        menor = nota
-
-media = suma / len(notas)
+media = sum(notas) / len(notas)
 
 print(f'Notas: {notas}')
 print(f'Media: {media}')
-print(f'Nota más alta: {mayor}')
-print(f'Nota más baja: {menor}')
+print(f'Nota más alta: {max(notas)}')
+print(f'Nota más baja: {min(notas)}')
 
